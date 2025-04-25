@@ -159,20 +159,20 @@ namespace UnityEngine.XR.Templates.MR
         /// </summary>
         public async void DeleteAnchors()
         {
-            m_AnchorText.text = "<b><u><align=center>- Deleted Persistent Anchors -</b></u></align>\n";
+            m_AnchorText.text = "<b><u><align=center>- Items persistants supprimées -</b></u></align>\n";
             await EraseAnchorsAsync();
 
             if (m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData.Count != 0)
             {
-                m_AnchorText.text += "\n\n<align=center>Failed to delete all anchors.</align>\n\n";
+                m_AnchorText.text += "\n\n<align=center>Echech de la suppression des items.</align>\n\n";
                 foreach (var kvp in m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData)
                 {
-                    m_AnchorText.text += $"GUID failed to remove: [{kvp.Key}]\n\n";
+                    m_AnchorText.text += $"GUID n'a pas réussi à supprimer: [{kvp.Key}]\n\n";
                 }
             }
             else
             {
-                m_AnchorText.text += "\n\n<align=center>All anchors deleted.</align>";
+                m_AnchorText.text += "\n\n<align=center>Tous les items ont été supprimés.</align>";
             }
         }
 
@@ -182,7 +182,7 @@ namespace UnityEngine.XR.Templates.MR
         /// </summary>
         public async void LoadAnchors()
         {
-            m_AnchorText.text = "<b><u><align=center>- Loaded Persistent Anchors -</b></u></align>\n";
+            m_AnchorText.text = "<b><u><align=center>- Items persistants chargés -</b></u></align>\n";
             await LoadAnchorsAsync();
         }
 
@@ -195,14 +195,14 @@ namespace UnityEngine.XR.Templates.MR
             if (!m_AnchorManager.descriptor.supportsSaveAnchor)
             {
                 Debug.LogWarning("Save anchor is not supported on this device.", this);
-                m_AnchorText.text = "Save anchor is not supported on this device.";
+                m_AnchorText.text = "La sauvegarde des items n'est pas pris en charge sur cet appareil.";
                 return;
             }
             // Clear existing anchors
             await EraseAnchorsAsync();
 
             // Save the current spawned anchors
-            m_AnchorText.text = "<b><u><align=center>- Saved Persistent Anchors -</b></u></align>\n";
+            m_AnchorText.text = "<b><u><align=center>- Items persistants sauvegardés -</b></u></align>\n";
             await SaveAchorsAsync();
         }
 
@@ -292,7 +292,7 @@ namespace UnityEngine.XR.Templates.MR
             }
             if (m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData.Count == 0 && updateText)
             {
-                m_AnchorText.text += "\n\n<align=center>- No Anchors To Load -</align>";
+                m_AnchorText.text += "\n\n<align=center>- Aucun item à charger -</align>";
             }
         }
 
@@ -304,7 +304,7 @@ namespace UnityEngine.XR.Templates.MR
             {
                 if (spawnedObjectHelper.persistentGuid == guid && spawnedObjectHelper.gameObject != null)
                 {
-                    m_AnchorText.text += $"Object {SpawnedObjectName(spawnedObjectHelper.spawnObjectIdx)} is already loaded.\nGUID {guid}.\n\n";
+                    m_AnchorText.text += $"Object {SpawnedObjectName(spawnedObjectHelper.spawnObjectIdx)} est déjà chargé.\nGUID {guid}.\n\n";
                     return;
                 }
             }
@@ -314,7 +314,7 @@ namespace UnityEngine.XR.Templates.MR
             {
                 // handle error
                 Debug.Log($"Error Loading Anchor - Status Code:{result.status.statusCode}\n\nError: {result.status} GUID: [{guid}].\n\n", this);
-                m_AnchorText.text += $"Error loading GUID: [{guid}].\n{result.status.statusCode}\n";
+                m_AnchorText.text += $"Erreur de chargement GUID: [{guid}].\n{result.status.statusCode}\n";
                 return;
             }
 
@@ -324,7 +324,7 @@ namespace UnityEngine.XR.Templates.MR
                 spawnAsPersistentAnchor = true;
                 int spawnId = m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData[guid];
                 CreateObjectForLoadedAnchor(newAnchor, guid, spawnId);
-                m_AnchorText.text += $"Loaded Object{SpawnedObjectName(spawnId)}\nGUID {guid}.\n\n";
+                m_AnchorText.text += $"Objet chargé{SpawnedObjectName(spawnId)}\nGUID {guid}.\n\n";
             }
             else
             {
@@ -378,7 +378,7 @@ namespace UnityEngine.XR.Templates.MR
 
             if (m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData.Count == 0 && updateText)
             {
-                m_AnchorText.text += "\n\n<align=center>- No Anchors To Save -</align>";
+                m_AnchorText.text += "\n\n<align=center>- Pas d'items à sauvegarder -</align>";
             }
         }
 
@@ -396,7 +396,7 @@ namespace UnityEngine.XR.Templates.MR
             {
                 // handle error
                 Debug.Log($"Error Saving Object: [{SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)}].\n\nStatus Code:{result.status.statusCode}\n\nError: {result.status}", this);
-                m_AnchorText.text += $"Failed to save {SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)}\n\n";
+                m_AnchorText.text += $"Echec de sauvegarde {SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)}\n\n";
                 return;
             }
 
@@ -409,7 +409,7 @@ namespace UnityEngine.XR.Templates.MR
             spawnedObjectHelper.persistentGuid = guid;
             m_SpawnedObjects[idx] = spawnedObjectHelper;
 
-            m_AnchorText.text += $"Saved Object {SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)}\nGUID: [{guid}].\n\n";
+            m_AnchorText.text += $"Objet sauvegardé {SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)}\nGUID: [{guid}].\n\n";
         }
 
         string SpawnedObjectName(int id)

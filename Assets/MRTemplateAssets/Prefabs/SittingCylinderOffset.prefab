@@ -91,10 +91,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5811970893536397571, guid: 12de3d11892198a4092dc2a8a2134790, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6520518481852344284}
   m_SourcePrefab: {fileID: 100100000, guid: 12de3d11892198a4092dc2a8a2134790, type: 3}
 --- !u!4 &438206900897095312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6621298676030886841, guid: 12de3d11892198a4092dc2a8a2134790, type: 3}
   m_PrefabInstance: {fileID: 6770958399691377961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &963491552463209514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5811970893536397571, guid: 12de3d11892198a4092dc2a8a2134790, type: 3}
+  m_PrefabInstance: {fileID: 6770958399691377961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6520518481852344284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963491552463209514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PermittedDisplacementAxes: 7
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 0.25
+  m_MaximumScaleRatio: 2
+  m_ScaleMultiplier: 0.25
