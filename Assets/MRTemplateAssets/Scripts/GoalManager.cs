@@ -75,7 +75,6 @@ namespace UnityEngine.XR.Templates.MR
         [SerializeField]
         Toggle m_PassthroughToggle;
 
-        //added AmbianceToggle
         [SerializeField]
         Toggle m_AmbianceToggle;
 
@@ -128,6 +127,7 @@ namespace UnityEngine.XR.Templates.MR
             if (m_FadeMaterial != null)
             {
                 m_FadeMaterial.FadeSkybox(true);
+                m_FadeMaterial.FadeAmbiance(false);
 
                 if (m_PassthroughToggle != null)
                     m_PassthroughToggle.isOn = true;
@@ -253,14 +253,10 @@ namespace UnityEngine.XR.Templates.MR
             if (m_CurrentGoal.CurrentGoal == OnboardingGoals.FindSurfaces)
             {
                 if (m_FadeMaterial != null)
-                    m_FadeMaterial.FadeSkybox(false);
+                    m_FadeMaterial.FadeSkybox(true);
 
                 if (m_PassthroughToggle != null)
-                    m_PassthroughToggle.isOn = false;
-
-                if (m_AmbianceToggle != null)
-                    m_AmbianceToggle.isOn = false; 
-
+                    m_PassthroughToggle.isOn = true;
 
                 if (m_LearnButton != null)
                 {
@@ -359,13 +355,10 @@ namespace UnityEngine.XR.Templates.MR
 
             if (m_FadeMaterial != null)
             {
-                m_FadeMaterial.FadeSkybox(false);
+                m_FadeMaterial.FadeSkybox(true);
 
                 if (m_PassthroughToggle != null)
-                    m_PassthroughToggle.isOn = false;
-
-                /*if (m_AmbianceToggle != null)
-                    m_AmbianceToggle.isOn = false;*/
+                    m_PassthroughToggle.isOn = true;
             }
 
             if (m_LearnButton != null)

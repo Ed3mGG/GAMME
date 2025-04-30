@@ -15,6 +15,7 @@ namespace UnityEngine.XR.Templates.MR
 
 
         Coroutine m_FadeCoroutine;
+        Coroutine m_FadeAmbianceCoroutine;
 
         public void FadeSkybox(bool visible)
         {
@@ -26,6 +27,44 @@ namespace UnityEngine.XR.Templates.MR
 
         //Fade Coroutine
         public IEnumerator Fade(bool visible)
+        {
+            Renderer rend = Environment.transform.GetComponent<Renderer>();
+            float alphaValue = rend.material.GetFloat("_Alpha");
+
+            if (visible)
+            {
+                //while loop to deincrement Alpha value until object is invisible
+                while (rend.material.GetFloat("_Alpha") > minAlpha)
+                {
+                    alphaValue -= Time.deltaTime / fadeSpeed;
+                    rend.material.SetFloat("_Alpha", alphaValue);
+                    yield return null;
+                }
+                rend.material.SetFloat("_Alpha", minAlpha);
+            }
+            else if (!visible)
+            {
+                //while loop to increment object Alpha value until object is opaque
+                while (rend.material.GetFloat("_Alpha") < maxAlpha)
+                {
+                    alphaValue += Time.deltaTime / fadeSpeed;
+                    rend.material.SetFloat("_Alpha", alphaValue);
+                    yield return null;
+                }
+                rend.material.SetFloat("_Alpha", maxAlpha);
+            }
+        }
+
+        public void FadeAmbiance(bool visible)
+        {
+            if (m_FadeAmbianceCoroutine != null)
+                StopCoroutine(m_FadeAmbianceCoroutine);
+
+            m_FadeCoroutine = StartCoroutine(FadeAmb(!visible));
+        }
+
+        //Ambiance Coroutine
+        public IEnumerator FadeAmb(bool visible)
         {
             Renderer rend = Environment.transform.GetComponent<Renderer>();
             float alphaValue = rend.material.GetFloat("_Alpha");

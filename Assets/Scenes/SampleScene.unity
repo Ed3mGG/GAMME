@@ -2716,6 +2716,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3646247163706079087, guid: 197edf6ce82dce64f8289009b457e763, type: 3}
+      propertyPath: maxAlpha
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3372,7 +3376,7 @@ PrefabInstance:
       objectReference: {fileID: 7168750574171982836}
     - target: {fileID: 2328623301140827554, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: m_IsOn
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2328623301140827554, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3380,7 +3384,7 @@ PrefabInstance:
       objectReference: {fileID: 145984943}
     - target: {fileID: 2328623301140827554, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FadeSkybox
+      value: FadeAmbiance
       objectReference: {fileID: 0}
     - target: {fileID: 2432750213076984622, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: m_text
