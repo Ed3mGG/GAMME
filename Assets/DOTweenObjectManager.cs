@@ -15,7 +15,6 @@ public class DOTweenObjectManager : MonoBehaviour
 
         // Checking if there is a game object selected, if there is, set it to active and starts the rotation
         if (selectedGameObject != null)
-            selectedGameObject.SetActive(true);
             RotationSystem();
 
         // Check if there is a light selected, if there is, enables it and starts the lighting sequence
@@ -46,11 +45,11 @@ public class DOTweenObjectManager : MonoBehaviour
 
     public void RotationSystem()
     {
-        Sequence rotationSequence = DOTween.Sequence();
-
         if (selectedGameObject == true)
+        {
+            Sequence rotationSequence = DOTween.Sequence();
             //selectedGameObject.transform.DORotate(new Vector3(0, 240, 0), 2, RotateMode.Fast).SetLoops(-1, LoopType.Restart);
             rotationSequence.Append(selectedGameObject.transform.DORotate(new Vector3(0, 340, 0), 2, RotateMode.Fast).SetLoops(-1, LoopType.Yoyo));
-
+        }      
     }
 }
