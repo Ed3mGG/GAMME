@@ -11,7 +11,7 @@ public class FollowingObject : MonoBehaviour
     [Tooltip("Offset of target.")]
      Vector3 m_TargetOffset = Vector3.forward;
 
-    bool m_IgnoreX;
+    bool m_IgnoreX, m_IgnoreZ;
     Vector3 m_TargetPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,7 +33,7 @@ public class FollowingObject : MonoBehaviour
             (
                 m_IgnoreX ? 0f : targetEuler.x,
                 targetEuler.y,
-                targetEuler.z
+                m_IgnoreZ ? 0f : targetEuler.z
             );
 
             newTransform.rotation = targetRotation;

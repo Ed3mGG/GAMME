@@ -1,11 +1,20 @@
+using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField]
     [Tooltip("Add your soundlist here.")]
-    public AudioClip[] music;
+    public AudioClip[] musicRepertory;
+
+    [SerializeField]
+    [Tooltip("Name of the musics.")]
+    public String[] musicText;
+
+
 
     [SerializeField]
     [Tooltip("This is the menu that will appear when you poke an object.")]
@@ -21,8 +30,11 @@ public class AudioManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-       
+       /* for (int i = 0; i < musicRepertory.Length; i++)
+        {
+            musicRepertory[i].LoadAudioData();
+        }
+       */
     }
 
     public void MenuVisibility()
