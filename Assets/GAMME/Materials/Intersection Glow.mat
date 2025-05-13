@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7746523869568036558
+--- !u!114 &-3977028119694421186
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test Mat
-  m_Shader: {fileID: -6465566751694194690, guid: 06cb5002dbfa0654eafbcd5767424b1e, type: 3}
+  m_Name: Intersection Glow
+  m_Shader: {fileID: -6465566751694194690, guid: 8baed7100354a5d41b3544c10cbfea17, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -55,11 +55,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fresnel_Power: 2.49
+    - _Edge_Threshold: 0.023
+    - _Intersection_Power: 25
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
-    - _Fresnel_Color: {r: 0, g: 0.09488535, b: 1, a: 0}
+    - _Glow_Color: {r: 3.9999995, g: 2.6071851, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
