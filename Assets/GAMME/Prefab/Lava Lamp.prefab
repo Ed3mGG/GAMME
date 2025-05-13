@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 3566390031902043909, guid: 3c9620eff24a998418bbc6253e956cc4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c72827ff241b42f429e0807aa097a8ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
