@@ -18,6 +18,7 @@ public class AmbianceManager : MonoBehaviour
     {
         if (m_AmbianceReference != null)
         {
+            m_colorSelected = GetComponent<MeshRenderer>().material.color;
             m_AmbianceReference.GetComponent<MeshRenderer>().material.DOColor(m_colorSelected, -1);
         }
     }

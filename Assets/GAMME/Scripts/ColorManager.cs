@@ -15,7 +15,7 @@ public class ColorManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Color")
+        if (other.CompareTag("Color"))
         {
             if (other.gameObject.GetComponent<MeshRenderer>().material != null)
             {
