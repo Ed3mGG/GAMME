@@ -126,11 +126,11 @@ namespace UnityEngine.XR.Templates.MR
 
             if (m_FadeMaterial != null)
             {
-                m_FadeMaterial.FadeSkybox(true);
+                m_FadeMaterial.FadeSkybox(false);
                 m_FadeMaterial.FadeAmbiance(false);
 
                 if (m_PassthroughToggle != null)
-                    m_PassthroughToggle.isOn = true;
+                    m_PassthroughToggle.isOn = false;
 
                 if (m_AmbianceToggle != null)
                     m_AmbianceToggle.isOn = false;

@@ -32,6 +32,7 @@ namespace UnityEngine.XR.Templates.MR
             set => m_PlaneManager = value;
         }
 
+
         [SerializeField, Tooltip("Toggle that dictates whether AR Planes should be visualized at runtime.")]
         bool m_PlaneVisualsEnabled = true;
 
@@ -127,6 +128,8 @@ namespace UnityEngine.XR.Templates.MR
                 m_PlaneManager.enabled = m_PlaneManagerEnabled;
             }
         }
+
+       
 
         /// <summary>
         /// Toggles the AR plane visualizations in a scene.
