@@ -231,7 +231,7 @@ PrefabInstance:
       addedObject: {fileID: 5201002587494766255}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3c9620eff24a998418bbc6253e956cc4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3667994892371980528}
+      addedObject: {fileID: 1052114357838755176}
     - targetCorrespondingSourceObject: {fileID: 2866621852552652557, guid: 3c9620eff24a998418bbc6253e956cc4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8774997947320377878}
@@ -512,8 +512,8 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
---- !u!136 &3667994892371980528
-CapsuleCollider:
+--- !u!65 &1052114357838755176
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -530,11 +530,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.095532656
-  m_Height: 0.7476681
-  m_Direction: 1
-  m_Center: {x: 0.008000001, y: 0.36703262, z: 0.018133402}
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.75, z: 0.2}
+  m_Center: {x: 0.007, y: 0.375, z: 0.015}
 --- !u!1 &5819216829744038314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -655515190766560270, guid: 3c9620eff24a998418bbc6253e956cc4, type: 3}
