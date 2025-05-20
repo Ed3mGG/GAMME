@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4394266223479343070}
   m_Layer: 0
   m_Name: SittingCylinder
-  m_TagString: Untagged
+  m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

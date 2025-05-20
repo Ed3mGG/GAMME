@@ -1,3 +1,5 @@
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
 
 public class FollowingObject : MonoBehaviour
@@ -13,6 +15,13 @@ public class FollowingObject : MonoBehaviour
 
     bool m_IgnoreX, m_IgnoreZ;
     Vector3 m_TargetPosition;
+
+    [SerializeField]
+    [Tooltip("Camera")]
+    private Camera m_Camera;
+
+    [SerializeField]
+    GameObject m_thisGameObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +48,22 @@ public class FollowingObject : MonoBehaviour
             newTransform.rotation = targetRotation;
             m_TargetPosition = m_Target.position + newTransform.TransformVector(m_TargetOffset);
             transform.position = m_TargetPosition;
+
+            if ((transform.position - m_Camera.transform.position).sqrMagnitude <= 1)
+            {
+                m_thisGameObject.transform.DOScale(1, -1);
+                m_TargetOffset.y = 2;
+            } 
+            else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 6)
+            {
+                m_thisGameObject.transform.DOScale(3, -1);
+                m_TargetOffset.y = 4;
+            }
+            else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 12)
+            {
+                m_thisGameObject.transform.DOScale(5, -1);
+                m_TargetOffset.y = 8;
+            }
         }  
     }
 }
