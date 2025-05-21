@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8719085273330676123}
   - component: {fileID: 5588576982285989521}
   - component: {fileID: 8561216639462571349}
+  - component: {fileID: 8474176823064811494}
   m_Layer: 0
   m_Name: AmbiancePicker
   m_TagString: Color
@@ -98,7 +99,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7540389502416240050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aef0b36bb77712544a92a5463288ff7a, type: 3}
   m_Name: 
@@ -223,8 +224,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3195683401045495057}
-        m_TargetAssemblyTypeName: AmbianceManager, Assembly-CSharp
+      - m_Target: {fileID: 8474176823064811494}
+        m_TargetAssemblyTypeName: AmbianceManagerLayout, Assembly-CSharp
         m_MethodName: AmbiancePicker
         m_Mode: 1
         m_Arguments:
@@ -309,3 +310,17 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
+--- !u!114 &8474176823064811494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540389502416240050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b756e4fc688724993c8602c7538212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MaterialReference: {fileID: 2100000, guid: b5f9fabb3a1893a4f94d924389644928, type: 2}
+  m_colorSelected: {r: 1, g: 0.96592194, b: 0, a: 0}
