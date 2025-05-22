@@ -38,16 +38,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Distort_Strength: 0.115
-    - _Metallic: 0.482
-    - _Noise_Scale: 11
+    - _Distort_Strength: 0.123
+    - _Metallic: 1
+    - _Noise_Scale: 213
     - _Normal_Strength: 0.0001
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Reflection_Strength: 0.2
+    - _Reflection_Strength: 5
     - _Smoothness: 1
     m_Colors:
-    - _Glass_Color: {r: 0, g: 0.09316105, b: 0.7075472, a: 0}
+    - _Glass_Color: {r: 0.51686543, g: 0.5749942, b: 0.9528302, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6153630951334865828
