@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fresnel
+  m_Name: VitreFresnel
   m_Shader: {fileID: -6465566751694194690, guid: 06cb5002dbfa0654eafbcd5767424b1e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -60,6 +60,6 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
-    - _Fresnel_Color: {r: 0.46293163, g: 0.8605727, b: 0.9716981, a: 0}
+    - _Fresnel_Color: {r: 0.5949341, g: 0.254539, b: 0.9811321, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

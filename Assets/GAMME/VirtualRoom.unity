@@ -1354,6 +1354,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 5e6b8592fa23dad4cb4a73fccd1672cc, type: 2}
+    - target: {fileID: 6288684238748356221, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8794ba6dddfbf734a85be6d749ad8a1d, type: 2}
     - target: {fileID: 8304253674906579003, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
       propertyPath: m_Name
       value: "Fontaine \xE0 bulle"
@@ -2531,6 +2535,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 18d9b6da4308e074091350ca73501899, type: 2}
+    - target: {fileID: 3314129911379220011, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d5a3804d1c2afac49b7b58f92c038d2e, type: 2}
+    - target: {fileID: 6288684238748356221, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b7962dba04c7b04cb8d706701b3d2ee, type: 2}
     - target: {fileID: 8304253674906579003, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
       propertyPath: m_Name
       value: "Fontaine \xE0 bulle (1)"
@@ -4139,6 +4151,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 2b8f8ce926cf4df4a82b73fa49507a6d, type: 2}
+    - target: {fileID: 3314129911379220011, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 70f4df8b3fc18bd4bb31457e142ba36c, type: 2}
+    - target: {fileID: 6288684238748356221, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cbe12a4f8ca0034983e360fe8c5d89d, type: 2}
     - target: {fileID: 8304253674906579003, guid: 962efbccbc57cea4ba875a916dbb6163, type: 3}
       propertyPath: m_Name
       value: "Fontaine \xE0 bulle (2)"
@@ -6091,6 +6111,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano
       objectReference: {fileID: 0}
+    - target: {fileID: 2435782872621449854, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 151c56a2f9e86114088de7dd5b17681b, type: 3}
+    - target: {fileID: 2435782872621449854, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 151c56a2f9e86114088de7dd5b17681b, type: 3}
+    - target: {fileID: 6669406308166920911, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: b2bb660e813163248bcc16ac270a493a, type: 3}
+    - target: {fileID: 6669406308166920911, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b2bb660e813163248bcc16ac270a493a, type: 3}
+    - target: {fileID: 7685807576251763777, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 20d5298752fc734459aae17fd1c141a6, type: 3}
+    - target: {fileID: 7685807576251763777, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 20d5298752fc734459aae17fd1c141a6, type: 3}
     - target: {fileID: 7989838701518233948, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
