@@ -55,15 +55,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fresnel_Power_Intersection: 1.58
+    - _Fresnel_Power_Intersection: 1.21
     - _Fresnel_Power_Object: 0
-    - _Intersection_Power: 23.2
-    - _Occlusion_Strength: 0.716
+    - _Intersection_Power: 0.01
+    - _Occlusion_Strength: 0.612
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Base_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _Fresnel_Color_Intersection: {r: 0.084590435, g: 0, b: 1, a: 0}
+    - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Fresnel_Color_Intersection: {r: 0, g: 1, b: 0.07855153, a: 0}
     - _Fresnel_Color_Object: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

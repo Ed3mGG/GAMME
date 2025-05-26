@@ -21,8 +21,7 @@ public class ColorManager : MonoBehaviour
             {
                 other.gameObject.GetComponent<MeshRenderer>().material.DOColor(colorSelected, -1);
             }
-        }
-        
+        }       
     }
 
     /*public void ChangeColor()

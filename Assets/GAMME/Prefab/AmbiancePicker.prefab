@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115f1a2a50d85cd4b9d6dad4c95622be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Interactable: {fileID: 0}
-  m_PokeCollider: {fileID: 0}
+  m_Interactable: {fileID: 8561216639462571349}
+  m_PokeCollider: {fileID: 5588576982285989521}
   m_PokeConfiguration:
     m_UseConstant: 1
     m_ConstantValue:
@@ -236,6 +236,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8474176823064811494}
+        m_TargetAssemblyTypeName: AmbianceManagerLayout, Assembly-CSharp
+        m_MethodName: FontaineAmbianceColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -324,3 +336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaterialReference: {fileID: 2100000, guid: b5f9fabb3a1893a4f94d924389644928, type: 2}
   m_colorSelected: {r: 1, g: 0.96592194, b: 0, a: 0}
+  m_FontaineMaterials:
+  - {fileID: 2100000, guid: 11d987830d0f07d43952a23e1b866c23, type: 2}
+  - {fileID: 2100000, guid: 0c1ae9f0ad703524d92384c355226a40, type: 2}
+  - {fileID: 2100000, guid: 1cc6bd77798e77f45ac96b25513ce85d, type: 2}
+  - {fileID: 2100000, guid: 4b1f621b938afc24f8030d3d325d060f, type: 2}

@@ -52,17 +52,17 @@ public class FollowingObject : MonoBehaviour
             if ((transform.position - m_Camera.transform.position).sqrMagnitude <= 1)
             {
                 m_thisGameObject.transform.DOScale(1, -1);
-                m_TargetOffset.y = 2;
+                m_TargetOffset.y = 3;
             } 
             else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 6)
             {
                 m_thisGameObject.transform.DOScale(3, -1);
-                m_TargetOffset.y = 4;
+                m_TargetOffset.y = 5;
             }
             else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 12)
             {
                 m_thisGameObject.transform.DOScale(5, -1);
-                m_TargetOffset.y = 8;
+                m_TargetOffset.y = 10;
             }
         }  
     }
