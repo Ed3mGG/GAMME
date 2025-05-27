@@ -1,15 +1,14 @@
 using DG.Tweening;
-using TMPro;
 using UnityEngine;
 
 public class FollowingObject : MonoBehaviour
 {
 
-    [SerializeField]
+    //[SerializeField]
     [Tooltip("Object to follow.")]
-    public Transform m_Target;
+    Transform m_Target;
 
-    [SerializeField]
+    //[SerializeField]
     [Tooltip("Offset of target.")]
      Vector3 m_TargetOffset = Vector3.forward;
 
@@ -23,47 +22,57 @@ public class FollowingObject : MonoBehaviour
     [SerializeField]
     GameObject m_thisGameObject;
 
+    private float instance;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        instance = 0;
+        ; 
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (m_Target != null)
+        if (instance == 0)
         {
-            var targetRotation = m_Target.rotation;
-            var newTransform = m_Target;
-            var targetEuler = targetRotation.eulerAngles;
-            targetRotation = Quaternion.Euler
-            (
-                m_IgnoreX ? 0f : targetEuler.x,
-                targetEuler.y,
-                m_IgnoreZ ? 0f : targetEuler.z
-            );
+            if (GameObject.FindGameObjectWithTag("MusicPlayer") != null)
+                m_Target = GameObject.FindGameObjectWithTag("MusicPlayer")?.GetComponent<Transform>();
+            instance = 1;
+        }
+        if (instance == 1)
+        {
+            if (m_Target != null)
+            {
+                var targetRotation = m_Target.rotation;
+                var newTransform = m_Target;
+                var targetEuler = targetRotation.eulerAngles;
+                targetRotation = Quaternion.Euler
+                (
+                    m_IgnoreX ? 0f : targetEuler.x,
+                    targetEuler.y,
+                    m_IgnoreZ ? 0f : targetEuler.z
+                );
+                if ((transform.position - m_Camera.transform.position).sqrMagnitude <= 1)
+                {
+                    m_thisGameObject.transform.DOScale(3, -1);
+                    m_TargetOffset.y = 5;
+                }
+                else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 6)
+                {
+                    m_thisGameObject.transform.DOScale(5, -1);
+                    m_TargetOffset.y = 7;
+                }
+                else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 12)
+                {
+                    m_thisGameObject.transform.DOScale(8, -1);
+                    m_TargetOffset.y = 12;
+                }
 
-            newTransform.rotation = targetRotation;
-            m_TargetPosition = m_Target.position + newTransform.TransformVector(m_TargetOffset);
-            transform.position = m_TargetPosition;
-
-            if ((transform.position - m_Camera.transform.position).sqrMagnitude <= 1)
-            {
-                m_thisGameObject.transform.DOScale(1, -1);
-                m_TargetOffset.y = 3;
-            } 
-            else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 6)
-            {
-                m_thisGameObject.transform.DOScale(3, -1);
-                m_TargetOffset.y = 5;
+                newTransform.rotation = targetRotation;
+                m_TargetPosition = m_Target.position + newTransform.TransformVector(m_TargetOffset);
+                transform.position = m_TargetPosition;
             }
-            else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 12)
-            {
-                m_thisGameObject.transform.DOScale(5, -1);
-                m_TargetOffset.y = 10;
-            }
-        }  
+        }
     }
 }

@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -8890687541678342269, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 66db57ed8c87bfc4b94f164b890b6b1d, type: 2}
+      objectReference: {fileID: 2100000, guid: 1cc6bd77798e77f45ac96b25513ce85d, type: 2}
     - target: {fileID: -8679921383154817045, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10331804
@@ -70,24 +70,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: m_Name
-      value: Enceinte low poly
+      value: MusicPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: m_TagString
-      value: Color
+      value: MusicPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5336909745382064588, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 93fe5dc95e1ec0941a7ce9ad294fb054, type: 2}
+      objectReference: {fileID: 2100000, guid: 1cc6bd77798e77f45ac96b25513ce85d, type: 2}
     - target: {fileID: 5494659886970537693, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 4ab3db468380b73438c50e072457db1b, type: 2}
+      objectReference: {fileID: 2100000, guid: b5f9fabb3a1893a4f94d924389644928, type: 2}
     - target: {fileID: 8080704966008054637, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 08985412a45dddf408d0b810d47ffc7b, type: 2}
+      objectReference: {fileID: 2100000, guid: 8d0991a092404e24f82ee429ab0961f3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -98,9 +98,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5205766577021966586}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7848285682738955190}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f73f0ac222dff245a6cfd4c7ba85c91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4231621979263694434}
@@ -122,14 +119,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2358b388ebec2824ba846623eb4fd8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_audioManager: {fileID: 0}
-  m_musicName: {fileID: 0}
-  m_PlayPause: {fileID: 0}
-  m_PlayPauseButton: {fileID: 0}
-  m_Slider: {fileID: 0}
-  m_Audio3DToggle: {fileID: 0}
-  m_Mixer: {fileID: 24100000, guid: dbb8f7b5a9788ed4f812c01733ce216c, type: 2}
-  m_music: 0
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 16
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
 --- !u!82 &5205766577021966586
 AudioSource:
   m_ObjectHideFlags: 0
@@ -227,90 +276,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7848285682738955190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528340416435450362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 16
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: MenuVisibility
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
 --- !u!65 &4231621979263694434
 BoxCollider:
   m_ObjectHideFlags: 0
