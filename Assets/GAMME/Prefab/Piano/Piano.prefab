@@ -379,6 +379,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 7.Si
       objectReference: {fileID: 0}
+    - target: {fileID: 2562934890175091972, guid: 0bfcb258e8eb8ac45a5b306854007472, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 20d5298752fc734459aae17fd1c141a6, type: 3}
+    - target: {fileID: 2562934890175091972, guid: 0bfcb258e8eb8ac45a5b306854007472, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 20d5298752fc734459aae17fd1c141a6, type: 3}
     - target: {fileID: 4469718441420036684, guid: 0bfcb258e8eb8ac45a5b306854007472, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.15
