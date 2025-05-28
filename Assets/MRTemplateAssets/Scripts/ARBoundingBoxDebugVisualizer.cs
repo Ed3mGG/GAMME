@@ -284,11 +284,13 @@ namespace UnityEngine.XR.Templates.MR
             switch (trackingState)
             {
                 case TrackingState.Tracking:
+                    /* This changes the appearance of the bounding boxes per the template, I am manually changing it in the AmbianceManager.
                     m_MeshRenderer.material.SetTexture("_MainTex", default);
                     m_MeshRenderer.material.mainTextureScale = new(1, 1);
                     m_MeshRenderer.material.SetColor("_Color", m_TrackingMeshColor);
                     m_MeshRenderer.material.SetColor("_TexColorTint", m_TrackingMeshColor);
                     m_BoundingBoxEdgeVisualizer.SetGradient(m_TrackingOutlineGradient);
+                    */
                     break;
                 case TrackingState.Limited:
                     m_MeshRenderer.material.SetTexture("_MainTex", default);

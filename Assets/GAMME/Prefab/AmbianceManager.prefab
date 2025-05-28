@@ -11,14 +11,13 @@ GameObject:
   - component: {fileID: 65742339615293747}
   - component: {fileID: 8201565237028885636}
   - component: {fileID: 6335179609430877981}
-  - component: {fileID: 3195683401045495057}
+  - component: {fileID: 8474176823064811494}
   - component: {fileID: 7093454009698948637}
   - component: {fileID: 8719085273330676123}
   - component: {fileID: 5588576982285989521}
   - component: {fileID: 8561216639462571349}
-  - component: {fileID: 8474176823064811494}
   m_Layer: 0
-  m_Name: AmbiancePicker
+  m_Name: AmbianceManager
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,20 +91,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3195683401045495057
+--- !u!114 &8474176823064811494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7540389502416240050}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef0b36bb77712544a92a5463288ff7a, type: 3}
+  m_Script: {fileID: 11500000, guid: b2b756e4fc688724993c8602c7538212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_colorSelected: {r: 1, g: 0.96592194, b: 0, a: 0}
+  m_EnvironmentMaterialReference:
+  - {fileID: 2100000, guid: b5f9fabb3a1893a4f94d924389644928, type: 2}
+  - {fileID: 2100000, guid: 58299d98585859f4cbbb6acd47db2bb3, type: 2}
+  - {fileID: 2100000, guid: cd9544f4b9670f045a660f292ef81c37, type: 2}
+  - {fileID: 2100000, guid: 84bfcba6623c5c243a0ed2f0540a6be1, type: 2}
+  m_FontaineMaterialsReference:
+  - {fileID: 2100000, guid: 11d987830d0f07d43952a23e1b866c23, type: 2}
+  - {fileID: 2100000, guid: 0c1ae9f0ad703524d92384c355226a40, type: 2}
+  - {fileID: 2100000, guid: 1cc6bd77798e77f45ac96b25513ce85d, type: 2}
+  - {fileID: 2100000, guid: 4b1f621b938afc24f8030d3d325d060f, type: 2}
   m_AmbianceReference: {fileID: 0}
-  m_colorSelected: {r: 0, g: 1, b: 0.9717827, a: 0}
+  m_isBackgroundColored: 0
 --- !u!114 &7093454009698948637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,18 +246,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8474176823064811494}
-        m_TargetAssemblyTypeName: AmbianceManagerLayout, Assembly-CSharp
-        m_MethodName: FontaineAmbianceColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -322,22 +320,3 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &8474176823064811494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7540389502416240050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b756e4fc688724993c8602c7538212, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MaterialReference: {fileID: 2100000, guid: b5f9fabb3a1893a4f94d924389644928, type: 2}
-  m_colorSelected: {r: 1, g: 0.96592194, b: 0, a: 0}
-  m_FontaineMaterials:
-  - {fileID: 2100000, guid: 11d987830d0f07d43952a23e1b866c23, type: 2}
-  - {fileID: 2100000, guid: 0c1ae9f0ad703524d92384c355226a40, type: 2}
-  - {fileID: 2100000, guid: 1cc6bd77798e77f45ac96b25513ce85d, type: 2}
-  - {fileID: 2100000, guid: 4b1f621b938afc24f8030d3d325d060f, type: 2}

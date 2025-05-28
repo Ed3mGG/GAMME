@@ -198,14 +198,14 @@ public class AudioManager : MonoBehaviour
         if (m_AudioSource.spatialBlend == 1)
         {
             m_AudioSource.spatialBlend = 0;
-            m_Audio3DToggle.isOn = false;
+            //m_Audio3DToggle.isOn = false;
 
         }
 
         else if (m_AudioSource.spatialBlend == 0)
         {
             m_AudioSource.spatialBlend = 1;
-            m_Audio3DToggle.isOn = true;
+            //m_Audio3DToggle.isOn = true;
 
         }
 

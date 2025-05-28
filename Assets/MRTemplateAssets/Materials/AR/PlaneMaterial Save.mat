@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlaneMaterial
+  m_Name: PlaneMaterial Save
   m_Shader: {fileID: 4800000, guid: 1673c64b6fb331c4996dd1c3bdb61bdb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -117,7 +117,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.14917865, g: 0.07389819, b: 0.3660378, a: 0.25490198}
+    - _Color: {r: 0.36862746, g: 0.65882355, b: 1, a: 0.25490198}
     - _ColorA: {r: 0.050980397, g: 0.9450981, b: 1, a: 1}
     - _ColorB: {r: 0.042452812, g: 0.9419669, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

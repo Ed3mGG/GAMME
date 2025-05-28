@@ -9,6 +9,7 @@ TagManager:
   - AudioMenu
   - AudioManager
   - MusicPlayer
+  - AmbianceBackground
   layers:
   - Default
   - TransparentFX
