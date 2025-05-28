@@ -142,6 +142,10 @@ PrefabInstance:
       value: Audio Menu
       objectReference: {fileID: 0}
     - target: {fileID: 5480223732846184679, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480223732846184679, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_TagString
       value: AudioMenu
       objectReference: {fileID: 0}
