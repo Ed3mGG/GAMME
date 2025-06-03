@@ -76,10 +76,10 @@ namespace UnityEngine.XR.Templates.MR
             }
             else
             {
-                m_AnchorText.text = "<b><u><align=center>- Currently Saved Objects -</b></u></align>\n\n";
+                m_AnchorText.text = "<b><u><align=center>- Objets actuellement sauvegardés -</b></u></align>\n\n";
                 if (m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData.Count == 0)
                 {
-                    m_AnchorText.text += "<align=center>- No Anchors Saved -</align>";
+                    m_AnchorText.text += "<align=center>- Pas d'item sauvegardé -</align>";
                 }
                 else
                 {
@@ -164,7 +164,7 @@ namespace UnityEngine.XR.Templates.MR
 
             if (m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData.Count != 0)
             {
-                m_AnchorText.text += "\n\n<align=center>Echech de la suppression des items.</align>\n\n";
+                m_AnchorText.text += "\n\n<align=center>Echec de la suppression des items.</align>\n\n";
                 foreach (var kvp in m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData)
                 {
                     m_AnchorText.text += $"GUID n'a pas réussi à supprimer: [{kvp.Key}]\n\n";
@@ -387,7 +387,7 @@ namespace UnityEngine.XR.Templates.MR
         {
             if (m_SaveAndLoadAnchorIdsToFile.SavedAnchorsData.ContainsKey(m_SpawnedObjects[idx].persistentGuid))
             {
-                m_AnchorText.text += $"Object {SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)} already saved.\nGUID: [{m_SpawnedObjects[idx].persistentGuid}].\n\n";
+                m_AnchorText.text += $"Object {SpawnedObjectName(m_SpawnedObjects[idx].spawnObjectIdx)} déjà sauvegardé.\nGUID: [{m_SpawnedObjects[idx].persistentGuid}].\n\n";
                 return;
             }
 
