@@ -4,22 +4,42 @@ using UnityEngine.UI;
 
 public class ColorPicker : MonoBehaviour
 {
+    [Header("Color")]
+    [SerializeField]
+    GameObject m_Peinture;
+    [SerializeField]
+    GameObject m_ImageToColor;
 
-    GameObject m_Potdepeinture;
-    Material m_Material;
+    [Header("Color Menu")]
+    [SerializeField]
+    private GameObject _ColorMenu;
 
-    Image _image;
+    private Material _potDePeinture;
+
+    Image _button;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _image = GetComponent<Image>();
+        _button = GetComponent<Image>();
+        _potDePeinture = m_Peinture.GetComponent<MeshRenderer>().material;
     }
     public void ColorSelected()
     {
-        if (m_Potdepeinture != null)
+        if (m_Peinture != null)
         {
-            m_Potdepeinture.GetComponent<MeshRenderer>().material.DOColor(_image.color, -1);
-            m_Material.SetColor("Color_Texture", _image.color);
+            _potDePeinture.SetColor("_Color", _button.color);
+            _potDePeinture.DOColor(_button.color, -1);
+            m_ImageToColor.GetComponent<Image>().DOColor(_button.color, -1);
         }
     }
+
+    public void CloseMenu()
+    {
+        if (_ColorMenu != null)
+        {
+            if (_ColorMenu.activeSelf)
+                _ColorMenu.SetActive(false);
+        }
+    }
+   
 }

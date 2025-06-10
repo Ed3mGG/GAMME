@@ -1,16 +1,24 @@
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
 public class ColorManager : MonoBehaviour
 {
+    
+    
+    [Header("Color Menu")]
     [SerializeField]
+    private GameObject _ColorMenu;
+
     Color colorSelected;
 
-    /*[SerializeField]
-    private GameObject item;*/
+    [SerializeField]
+    float m_timeBeforeMenu;
+
     void Start()
     {
-        GetComponent<MeshRenderer>().material.DOColor(colorSelected, -1);
+        
+        MenuVisibility();
     }
 
     void OnTriggerEnter(Collider other)
@@ -19,15 +27,21 @@ public class ColorManager : MonoBehaviour
         {
             if (other.gameObject.GetComponent<MeshRenderer>().material != null)
             {
+                colorSelected = GetComponent<MeshRenderer>().material.GetColor("_Color");
                 other.gameObject.GetComponent<MeshRenderer>().material.DOColor(colorSelected, -1);
             }
         }       
     }
 
-    /*public void ChangeColor()
+    public void MenuVisibility()
     {
-        item.GetComponent<MeshRenderer>().material.DOColor(colorSelected, -1);
-    }*/
+        if (_ColorMenu != null)
+        {
+            if (!_ColorMenu.activeSelf)
+                _ColorMenu.SetActive(true);
+            else _ColorMenu.SetActive(false);
+        }
+    }
 
     
 }
