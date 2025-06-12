@@ -159,7 +159,7 @@ namespace UnityEngine.XR.Templates.MR
         {
             if (m_AROcclusionManager != null)
             {
-                m_AROcclusionManager.enabled = isOn;
+                m_AROcclusionManager.enabled = !isOn;
             }
         }
 
