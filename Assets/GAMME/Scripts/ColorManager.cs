@@ -12,8 +12,6 @@ public class ColorManager : MonoBehaviour
 
     Color colorSelected;
 
-    [SerializeField]
-    float m_timeBeforeMenu;
 
     void Start()
     {
