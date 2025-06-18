@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class MapSelection : MonoBehaviour
 {
     [SerializeField]
-    Button m_virtualRoomButton, m_playgroundAR, m_menu;
+    Button m_virtualRoomButton, m_playgroundAR, m_menu, m_tutoriel;
 
     public void LoadVirtualRoom()
     {
@@ -28,6 +28,14 @@ public class MapSelection : MonoBehaviour
         if (m_menu != null)
         {
             SceneManager.LoadScene("Menu");
+        }
+    }
+
+    public void LoadTutoriel()
+    {
+        if (m_tutoriel != null)
+        {
+            SceneManager.LoadScene("Tutoriel 1");
         }
     }
 }
