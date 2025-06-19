@@ -14,6 +14,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         Camera m_CameraToFace;
 
         /// <summary>
+        /// Section for Tutorial
+        /// </summary>
+        //[SerializeField] GameObject m_Tutorial;
+        //public TutorialManager m_Tutorial = TutorialManager.Instance;
+        
+        /// <summary>
         /// The camera that objects will face when spawned. If not set, defaults to the <see cref="Camera.main"/> camera.
         /// </summary>
         public Camera cameraToFace
@@ -242,6 +248,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         private System.Collections.IEnumerator ResetSpawnObject(float delaySeconds, System.Action resetEventSpawn)
         {
+            /*if (m_Tutorial != null)
+            {
+                //m_Tutorial.GetComponent<TutorialManager>()?.functionCalled(false);
+                m_Tutorial.functionCalled(false);
+            }*/
             yield return new WaitForSeconds(delaySeconds);
             resetEventSpawn();
         }
