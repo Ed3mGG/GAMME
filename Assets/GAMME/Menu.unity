@@ -1101,9 +1101,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2073726594}
     m_Modifications:
+    - target: {fileID: 423367036209086187, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232575243477628169, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232575243477628169, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.5970497
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232575243477628169, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1232575243477628169, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadTutoriel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610898773185892, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -181
       objectReference: {fileID: 0}
     - target: {fileID: 1668610899285966248, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
       propertyPath: m_Camera
@@ -1112,6 +1132,14 @@ PrefabInstance:
     - target: {fileID: 1668610899285966251, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899355564308, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899355564309, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1668610899415792310, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1156,6 +1184,30 @@ PrefabInstance:
     - target: {fileID: 1668610899415792311, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
       propertyPath: m_Name
       value: MapSelection
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899535517650, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_text
+      value: "D\xE9tente"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899992189967, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899992189970, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899992189970, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610899992189970, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668610900434571918, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
+      propertyPath: m_text
+      value: Aire de jeux
       objectReference: {fileID: 0}
     - target: {fileID: 4341097307343484491, guid: dd7bbfd4a7aad6a419b4a7b66197b7ce, type: 3}
       propertyPath: m_AnchorMax.y
