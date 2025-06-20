@@ -16,8 +16,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <summary>
         /// Section for Tutorial
         /// </summary>
-        //[SerializeField] GameObject m_Tutorial;
-        //public TutorialManager m_Tutorial = TutorialManager.Instance;
+        public int m_TutorialObjectCount;
+
+        public bool m_TutorialCheck = true;
         
         /// <summary>
         /// The camera that objects will face when spawned. If not set, defaults to the <see cref="Camera.main"/> camera.
@@ -184,6 +185,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             m_SpawnOptionIndex = -1;
         }
 
+        private void Start()
+        {
+            m_TutorialObjectCount = 0;
+        }
+
         /// <summary>
         /// Attempts to spawn an object from <see cref="objectPrefabs"/> at the given position. The object will have a
         /// yaw rotation that faces <see cref="cameraToFace"/>, plus or minus a random angle within <see cref="spawnAngleRange"/>.
@@ -200,8 +206,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+            m_TutorialCheck = false;
             if (objectHasBeenSpawned == false)
             {
+                
                 objectHasBeenSpawned = true;
                 if (m_OnlySpawnInView)
                 {
@@ -240,7 +248,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                     visualizationTrans.position = spawnPoint;
                     visualizationTrans.rotation = newObject.transform.rotation;
                 }
-                objectSpawned?.Invoke(newObject);              
+                objectSpawned?.Invoke(newObject);  
+                m_TutorialObjectCount ++;
+                m_TutorialCheck = true;
                 StartCoroutine(ResetSpawnObject(spawnDelay, () => { objectHasBeenSpawned = false; }));
             }
             return true;
@@ -248,11 +258,6 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         private System.Collections.IEnumerator ResetSpawnObject(float delaySeconds, System.Action resetEventSpawn)
         {
-            /*if (m_Tutorial != null)
-            {
-                //m_Tutorial.GetComponent<TutorialManager>()?.functionCalled(false);
-                m_Tutorial.functionCalled(false);
-            }*/
             yield return new WaitForSeconds(delaySeconds);
             resetEventSpawn();
         }

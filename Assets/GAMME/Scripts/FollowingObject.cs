@@ -53,20 +53,15 @@ public class FollowingObject : MonoBehaviour
                     targetEuler.y,
                     m_IgnoreZ ? 0f : targetEuler.z
                 );
-                if ((transform.position - m_Camera.transform.position).sqrMagnitude <= 1)
+                if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 2)
                 {
-                    m_thisGameObject.transform.DOScale(3, -1);
+                    m_thisGameObject.transform.DOScale(4, -1);
+                    m_TargetOffset.y = 10;
+                }
+                else
+                {
+                    m_thisGameObject.transform.DOScale(2, -1);
                     m_TargetOffset.y = 5;
-                }
-                else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 6)
-                {
-                    m_thisGameObject.transform.DOScale(5, -1);
-                    m_TargetOffset.y = 7;
-                }
-                else if ((transform.position - m_Camera.transform.position).sqrMagnitude >= 12)
-                {
-                    m_thisGameObject.transform.DOScale(8, -1);
-                    m_TargetOffset.y = 12;
                 }
 
                 newTransform.rotation = targetRotation;

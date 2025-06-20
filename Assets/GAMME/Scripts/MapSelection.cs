@@ -38,4 +38,12 @@ public class MapSelection : MonoBehaviour
             SceneManager.LoadScene("Tutoriel 1");
         }
     }
+    
+    public void EndTutoriel()
+    {
+        if (m_tutoriel != null)
+        {
+            SceneManager.LoadScene("PlaygroundAR");
+        }
+    }
 }

@@ -128,7 +128,7 @@ public struct GoalTutorials
         {
             if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Passthrough)
             {
-                if (m_secondGoalInt < 1)
+                if (m_secondGoalInt <= 1)
                 {
                     m_secondGoalInt++;
                     isGoalCompleted();
@@ -140,7 +140,7 @@ public struct GoalTutorials
         {
             if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Passthrough)
             {
-                if (m_secondGoalIntBis < 1)
+                if (m_secondGoalIntBis <= 1)
                 {
                     m_secondGoalIntBis++;
                     isGoalCompleted();
@@ -218,6 +218,7 @@ public struct GoalTutorials
                 {
                     m_firstGoalInt= 0;
                     m_secondGoalInt = 0;
+                    m_secondGoalIntBis = 0;
                     m_thirdGoalInt = 0;
                     m_AllGoalsFinished = true;
                     ForceEndAllGoals();
@@ -241,6 +242,7 @@ public struct GoalTutorials
                 {
                     m_firstGoalInt = 0;
                     m_secondGoalInt = 0;
+                    m_secondGoalIntBis = 0;
                     m_FeatureController.ToggleBoundingBoxes(false);
                     m_FeatureController.ToggleBoundingBoxVisualization(false);
                     m_FeatureController.TogglePlanes(false);
@@ -311,7 +313,7 @@ public struct GoalTutorials
                 }
                 else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Passthrough)
                 {
-                    if (m_secondGoalInt > 0 && m_secondGoalIntBis > 0)
+                    if (m_secondGoalInt >= 2 && m_secondGoalIntBis > 0)
                     {
                         ContinueButton.gameObject.SetActive(true);
                     }

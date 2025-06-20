@@ -7,6 +7,7 @@ namespace GAMME.Scripts
 {
     public class TutorialManager : MonoBehaviour
     {
+        
         public static TutorialManager Instance;
     
         [SerializeField] ObjectSpawner m_Spawner;
@@ -15,12 +16,11 @@ namespace GAMME.Scripts
         [SerializeField] private GameObject m_NextTutorialButton;
     
         [SerializeField] private int m_ObjectSpawnedIndex;
+        private int m_FinalCount;
     
         [SerializeField]
         ARFeatureController m_FeatureController;
-
-        private bool functionCalled = false;
-    
+        
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -51,29 +51,19 @@ namespace GAMME.Scripts
 
         private void Update()
         {
-            if (!functionCalled)
-            {
-                if (m_Spawner.objectHasBeenSpawned)
-                {
-                    functionCalled = true;
-            
-                    SpawnMinus();
-                }
-            
-            }
+            m_FinalCount =  m_ObjectSpawnedIndex - m_Spawner.m_TutorialObjectCount;
+            m_ObjectCountText.SetText(m_FinalCount.ToString());
+            ObjectToSpawnCount();
         }
 
-        public void isTutorialCompleted()
+        public void TutorialCompleted()
         {
-            if (m_ObjectSpawnedIndex <= 0)
-            {
                 SceneManager.LoadScene("Tutoriel 3");
-            }
         }
 
         public void ObjectToSpawnCount()
         {
-            if (m_ObjectSpawnedIndex <= 0)
+            if (m_FinalCount <= 0)
             {
                 m_ObjectCount.gameObject.SetActive(false);
                 m_NextTutorialButton.SetActive(true); 
@@ -82,14 +72,9 @@ namespace GAMME.Scripts
 
         public void SpawnMinus()
         {
-            m_ObjectSpawnedIndex = - 1;
-            if (m_ObjectCount.gameObject.activeSelf)
-            {
-                m_ObjectCountText.SetText(m_ObjectSpawnedIndex.ToString());
-            }
+            m_FinalCount =  m_ObjectSpawnedIndex - m_Spawner.m_TutorialObjectCount;
+            m_ObjectCountText.SetText(m_FinalCount.ToString());
             ObjectToSpawnCount();
-
-            //functionCalled = false;
         }
     }
 }

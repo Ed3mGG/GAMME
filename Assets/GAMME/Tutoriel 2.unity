@@ -631,8 +631,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 352085673}
-        m_TargetAssemblyTypeName: SpawnObjectTutorialManager, Assembly-CSharp
-        m_MethodName: isTutorialCompleted
+        m_TargetAssemblyTypeName: GAMME.Scripts.TutorialManager, Assembly-CSharp
+        m_MethodName: TutorialCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4112,6 +4112,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -37.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2103858168027866294, guid: 92819538fde62254184cf437a08152d4, type: 3}
+      propertyPath: m_text
+      value: Manipulation d'objets
+      objectReference: {fileID: 0}
     - target: {fileID: 2258952250024477311, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4431,6 +4435,14 @@ PrefabInstance:
     - target: {fileID: 7366794108902844311, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435398331756631708, guid: 92819538fde62254184cf437a08152d4, type: 3}
+      propertyPath: m_text
+      value: Touchez une surface
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435398331756631708, guid: 92819538fde62254184cf437a08152d4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7556647516846061558, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: m_Camera
