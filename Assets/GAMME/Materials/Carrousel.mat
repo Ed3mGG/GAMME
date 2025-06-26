@@ -70,7 +70,7 @@ Material:
     - _Clockwise: 1
     - _Cull: 0
     - _DstBlend: 1
-    - _Fresnel_Power: 0
+    - _Fresnel_Power: 3.13
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rotation_Multiplicator: 0.38
@@ -81,6 +81,6 @@ Material:
     - _ZWriteControl: 0
     - _minus: -1
     m_Colors:
-    - _Fresnel_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _Fresnel_Color: {r: 0.9169811, g: 0.9169811, b: 0.9169811, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

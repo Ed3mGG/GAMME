@@ -16,6 +16,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GAMME/Scripts/EndTutorial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GAMME/Scripts/StepManagerUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@42ef3600567b/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@42ef3600567b/Runtime/Interaction/Interactors/Visuals/CurveVisualController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@42ef3600567b/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@42ef3600567b/Runtime/UI/LazyFollow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -108,6 +112,9 @@
       <workItem from="1750321382792" duration="121000" />
       <workItem from="1750321995714" duration="15635000" />
       <workItem from="1750408361472" duration="13517000" />
+      <workItem from="1750756401345" duration="30000" />
+      <workItem from="1750757107189" duration="2526000" />
+      <workItem from="1750939407970" duration="784000" />
     </task>
     <servers />
   </component>
