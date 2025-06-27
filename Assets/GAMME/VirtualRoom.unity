@@ -8397,6 +8397,10 @@ PrefabInstance:
       propertyPath: m_RevealHideAnimationDuration
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7761804942926714491, guid: 92819538fde62254184cf437a08152d4, type: 3}
+      propertyPath: m_MenuVisibleGazeAngleDivergenceThreshold
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7866940399663208338, guid: 92819538fde62254184cf437a08152d4, type: 3}
       propertyPath: m_IsActive
       value: 0
