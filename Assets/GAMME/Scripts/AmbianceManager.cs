@@ -70,6 +70,7 @@ public class AmbianceManager : MonoBehaviour
         if (m_FontaineMaterialsReference != null)
         {
             m_FontaineMaterialsReference[0].SetColor("_Fresnel_Color", m_colorSelected);
+            //m_FontaineMaterialsReference[0].SetColor("_Base_Color", m_colorSelected);
             m_FontaineMaterialsReference[1].SetColor("_Fresnel_Color", m_colorSelected);
             m_FontaineMaterialsReference[2].SetColor("_Base_Color", m_colorSelected);
             m_FontaineMaterialsReference[3].SetColor("_Base_Color", m_colorSelected);

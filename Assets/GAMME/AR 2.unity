@@ -3343,7 +3343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6836549529614297474, guid: c732ad05fbebbd24f874a54aa7058f23, type: 3}
       propertyPath: _delayBeforeRotation
-      value: 0.3
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7310692537012017593, guid: c732ad05fbebbd24f874a54aa7058f23, type: 3}
       propertyPath: m_LocalPosition.x

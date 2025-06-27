@@ -11,7 +11,7 @@ public class SetupRotationAtStart : MonoBehaviour
     private Vector3 _SetupPosition;
     
     Coroutine coroutine;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         _SetupPosition =  _Setup.transform.position;
@@ -20,7 +20,7 @@ public class SetupRotationAtStart : MonoBehaviour
             StartCoroutine(DelayBeforeRotation(_delayBeforeRotation));
         }
     }
-
+//This script rotates the GameObject "Setup" to it faces the direction of the MainCamera after the delay (can be set in the Editor "Delay Before Rotation")
     private IEnumerator DelayBeforeRotation(float delay)
     {
         yield return new WaitForSeconds(delay);
