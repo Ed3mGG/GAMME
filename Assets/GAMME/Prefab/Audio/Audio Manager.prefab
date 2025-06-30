@@ -69,6 +69,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slider AudioVolume
       objectReference: {fileID: 0}
+    - target: {fileID: 570335266990003594, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.0029499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 570335266990003594, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 570335266990003594, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.0029499999
+      objectReference: {fileID: 0}
     - target: {fileID: 969990415577607387, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -82,6 +94,30 @@ PrefabInstance:
       value: AudioManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.07843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8169632728320364898}
@@ -92,6 +128,46 @@ PrefabInstance:
     - target: {fileID: 1258364718515771760, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516480492359951343, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217424805025108564, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.9734664
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.07108998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3626024346466627961, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -110,6 +186,42 @@ PrefabInstance:
       value: Text (TMP) - PlayPause
       objectReference: {fileID: 0}
     - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.7596735
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.07843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.03325733
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.36091602
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6528301
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117548803264502725, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8169632728320364898}
@@ -124,6 +236,30 @@ PrefabInstance:
     - target: {fileID: 5011702796208803026, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_Name
       value: Text Poke Button PlayPauseMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.07843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5282420267583522745, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -146,8 +282,20 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5480223732846184679, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480223732846184679, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_TagString
       value: AudioMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6546723058660006622, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.0029499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6546723058660006622, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6800437363578747694, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -188,6 +336,42 @@ PrefabInstance:
     - target: {fileID: 6800437363578747694, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624355443751947881, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624355443751947881, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624355443751947881, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624355443751947881, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424414129212768904, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424414129212768904, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424414129212768904, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424414129212768904, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460047385262440748, guid: 87db7cf606faca449bc9bd1f4ae1b86a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
