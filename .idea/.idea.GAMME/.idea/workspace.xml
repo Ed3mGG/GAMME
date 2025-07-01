@@ -117,6 +117,7 @@
       <workItem from="1750757107189" duration="2526000" />
       <workItem from="1750939407970" duration="1380000" />
       <workItem from="1751011022994" duration="5831000" />
+      <workItem from="1751364191024" duration="599000" />
     </task>
     <servers />
   </component>
@@ -125,7 +126,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
-    <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>
