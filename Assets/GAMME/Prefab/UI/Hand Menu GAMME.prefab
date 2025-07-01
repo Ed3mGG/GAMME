@@ -1677,11 +1677,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
+    m_NormalColor: {r: 0.3660378, g: 0, b: 0.3169811, a: 1}
     m_HighlightedColor: {r: 0.40392157, g: 0.14901961, b: 0.36862746, a: 1}
     m_PressedColor: {r: 0.58431375, g: 0.20392159, b: 0.53333336, a: 1}
     m_SelectedColor: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.031562805, g: 0.28130248, b: 0.5396226, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2820,7 +2820,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4331085902983068100}
         m_TargetAssemblyTypeName: MapSelection, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -3581,7 +3581,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.XR.Templates.MR.ARFeatureController,
-          Assembly-CSharp
+          MRTemplate
         m_MethodName: ToggleBoundingBoxVisualization
         m_Mode: 0
         m_Arguments:
@@ -4918,7 +4918,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARFeatureController, Assembly-CSharp
+        m_TargetAssemblyTypeName: UnityEngine.XR.Templates.MR.ARFeatureController,
+          MRTemplate
         m_MethodName: TogglePlanes
         m_Mode: 0
         m_Arguments:
@@ -6166,7 +6167,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARFeatureController, Assembly-CSharp
+        m_TargetAssemblyTypeName: UnityEngine.XR.Templates.MR.ARFeatureController,
+          MRTemplate
         m_MethodName: ToggleBoundingBoxes
         m_Mode: 0
         m_Arguments:
@@ -9364,7 +9366,7 @@ MonoBehaviour:
   m_MaxFollowDistance: 0.03
   m_MinToMaxDelaySeconds: 1
   m_HideMenuWhenGazeDiverges: 1
-  m_MenuVisibleGazeAngleDivergenceThreshold: 10
+  m_MenuVisibleGazeAngleDivergenceThreshold: 35
   m_AnimateMenuHideAndReveal: 1
   m_RevealHideAnimationDuration: 0.1
   m_HideMenuOnSelect: 1
@@ -10818,7 +10820,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.XR.Templates.MR.ARFeatureController,
-          Assembly-CSharp
+          MRTemplate
         m_MethodName: TogglePlaneVisualization
         m_Mode: 0
         m_Arguments:
