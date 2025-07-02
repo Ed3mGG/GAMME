@@ -16,6 +16,11 @@ public class AmbianceManager : MonoBehaviour
     [SerializeField]
     Material[] m_FontaineMaterialsReference;
     // 0 is Bubbles_Ambiance, 1 is VitreFresnel_Ambiance, 2 is InnerSpotlight_Ambiance, 3 is OuterSpotlight_Ambiance
+    
+    [Header("Others")]
+    [SerializeField]
+    Material[] m_OtherMaterialReference;
+    // 0 is Bordure
 
     [Header("Background Ambiance")]
     [SerializeField]
@@ -33,7 +38,7 @@ public class AmbianceManager : MonoBehaviour
         {
             m_AmbianceReference = GameObject.FindGameObjectWithTag("AmbianceBackground");
         }
-        GetComponent<MeshRenderer>().material.DOColor(m_colorSelected, -1);
+        //GetComponent<MeshRenderer>().material.DOColor(m_colorSelected, -1);
         AmbianceColorAtStart();
     }
 
@@ -41,8 +46,8 @@ public class AmbianceManager : MonoBehaviour
     {
         m_colorSelected = GetComponent<MeshRenderer>().material.color;
 
-        AmbianceColor();
-        FontaineAmbianceColor();
+        EnvironmentAmbianceColor();
+        ObjectsAmbianceColor();
 
         if (m_isBackgroundColored)
         {
@@ -62,10 +67,16 @@ public class AmbianceManager : MonoBehaviour
             m_EnvironmentMaterialReference[1].SetColor("_TexColorTint", Color.white);
             m_EnvironmentMaterialReference[2].SetColor("_Fresnel_Color", Color.white);
             m_EnvironmentMaterialReference[3].SetColor("_Base_Color", Color.white);
+            
+        }
+
+        if (m_OtherMaterialReference != null)
+        {
+            m_OtherMaterialReference[0].SetColor("_Base_Color", Color.white);
         }
     }
 
-    public void FontaineAmbianceColor()
+    public void ObjectsAmbianceColor()
     {
         if (m_FontaineMaterialsReference != null)
         {
@@ -75,9 +86,14 @@ public class AmbianceManager : MonoBehaviour
             m_FontaineMaterialsReference[2].SetColor("_Base_Color", m_colorSelected);
             m_FontaineMaterialsReference[3].SetColor("_Base_Color", m_colorSelected);
         }
+
+        if (m_OtherMaterialReference != null)
+        {
+            m_OtherMaterialReference[0].SetColor("_Base_Color", m_colorSelected);
+        }
     }
 
-    public void AmbianceColor()
+    public void EnvironmentAmbianceColor()
     {
         if (m_EnvironmentMaterialReference != null)
         {
