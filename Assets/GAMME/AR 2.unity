@@ -4236,13 +4236,17 @@ PrefabInstance:
       value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 549715801108493674, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 1073742583
+      objectReference: {fileID: 0}
+    - target: {fileID: 549715801108493674, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 4294967295
+      value: 2147483775
       objectReference: {fileID: 0}
     - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: 'm_ObjectPrefabs.Array.data[1]'
       value: 
-      objectReference: {fileID: 8712518340871279728, guid: fda2e12b84328cc4981ef95de7ce28c5, type: 3}
+      objectReference: {fileID: 2003287130354849697, guid: 194d9a7e1a8e7d740a922c8183f154de, type: 3}
     - target: {fileID: 1123720374034469238, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_AnchorText
       value: 
@@ -4259,9 +4263,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: MR Interaction Setup
       objectReference: {fileID: 0}
+    - target: {fileID: 2155096125449988465, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360316315946156128, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 1073742583
+      objectReference: {fileID: 0}
     - target: {fileID: 2360316315946156128, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 4294967295
+      value: 2147483775
       objectReference: {fileID: 0}
     - target: {fileID: 2967333288710917725, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_Height
@@ -4269,7 +4281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336822451505754871, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 2147483743
+      value: 2147483871
       objectReference: {fileID: 0}
     - target: {fileID: 4834320768310174820, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
@@ -4485,7 +4497,7 @@ PrefabInstance:
       objectReference: {fileID: 827510676}
     - target: {fileID: 6817139162853176601, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 2147483743
+      value: 2147483871
       objectReference: {fileID: 0}
     - target: {fileID: 6822488854177168858, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_IsActive
@@ -4561,6 +4573,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9174181108043471299, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177309628892999327, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

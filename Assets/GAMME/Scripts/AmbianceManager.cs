@@ -28,6 +28,11 @@ public class AmbianceManager : MonoBehaviour
     [SerializeField]
     Boolean m_isBackgroundColored = false;
     
+    [Header("SFX Feedback")] 
+    [SerializeField] Boolean m_SFXFeedback = false;
+        [SerializeField] AudioClip m_SFXFeedbackClip;
+        [SerializeField] AudioSource m_SFXFeedbackSource;
+    
 
 
 
@@ -48,6 +53,7 @@ public class AmbianceManager : MonoBehaviour
 
         EnvironmentAmbianceColor();
         ObjectsAmbianceColor();
+        PlaySFXFeedback();
 
         if (m_isBackgroundColored)
         {
@@ -110,6 +116,17 @@ public class AmbianceManager : MonoBehaviour
         if (m_AmbianceReference != null)
         {
             m_AmbianceReference.GetComponent<MeshRenderer>().material.DOColor(m_colorSelected, -1);
+        }
+    }
+
+    public void PlaySFXFeedback()
+    {
+        if (m_SFXFeedback)
+        {
+            if (m_SFXFeedback != null && m_SFXFeedbackSource != null)
+            {
+                m_SFXFeedbackSource.PlayOneShot(m_SFXFeedbackClip);
+            } 
         }
     }
 
