@@ -4237,7 +4237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 549715801108493674, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_PhysicsLayerMask.m_Bits
-      value: 1073742583
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 549715801108493674, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
@@ -4269,7 +4269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2360316315946156128, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_PhysicsLayerMask.m_Bits
-      value: 1073742583
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2360316315946156128, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
