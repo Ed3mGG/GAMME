@@ -11,7 +11,7 @@ public class MapSelection : MonoBehaviour
     {
         if (m_virtualRoomButton != null)
         {
-            SceneManager.LoadScene("AR 2");
+            SceneManager.LoadScene("AR 3");
         }
     }
 
