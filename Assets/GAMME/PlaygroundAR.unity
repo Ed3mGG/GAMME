@@ -1051,8 +1051,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5175,9 +5175,41 @@ PrefabInstance:
       value: 2147483775
       objectReference: {fileID: 0}
     - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4138363921610952387, guid: 22b3d1c150c97d4488e7ac500c9bf7d3, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: 'm_ObjectPrefabs.Array.data[1]'
       value: 
       objectReference: {fileID: 2003287130354849697, guid: 194d9a7e1a8e7d740a922c8183f154de, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3327734371650168340, guid: 6a79f2a0b277ac7469a3412ba9e21159, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8603162278511432126, guid: c1161388bcf31b54b8f8b129c7cd3f49, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 3090682491555538697, guid: 058df97a69c15264791cc9e2a87e359a, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1012454635996319713, guid: 5d65f205798ce584ab7d348b4175097c, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[6]'
+      value: 
+      objectReference: {fileID: 224152419403842139, guid: 05a2b040af493d742a9bb80e3e7f61f7, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[7]'
+      value: 
+      objectReference: {fileID: 3365142066875854378, guid: 47c83575490a94e48b9bafaec8375935, type: 3}
+    - target: {fileID: 646370788497530507, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
+      propertyPath: 'm_ObjectPrefabs.Array.data[8]'
+      value: 
+      objectReference: {fileID: 5015616424701394717, guid: 8c9fb7a56c3712049b4c26f9e9aeaa4b, type: 3}
     - target: {fileID: 1123720374034469238, guid: 1e3493b973809564d9872445ec0ca15a, type: 3}
       propertyPath: m_AnchorText
       value: 
