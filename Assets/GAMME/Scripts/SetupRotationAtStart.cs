@@ -1,6 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
+//This script rotates the scene (more specifically the GameObject and its items) to the camera rotation
+//So the object always appears at the right place when the scene is loaded
+
 public class SetupRotationAtStart : MonoBehaviour
 {
 
@@ -20,7 +23,7 @@ public class SetupRotationAtStart : MonoBehaviour
             StartCoroutine(DelayBeforeRotation(_delayBeforeRotation));
         }
     }
-//This script rotates the GameObject "Setup" to it faces the direction of the MainCamera after the delay (can be set in the Editor "Delay Before Rotation")
+//This script rotates the GameObject "Setup" so it faces the direction of the MainCamera after the delay (can be set in the Editor "Delay Before Rotation")
     private IEnumerator DelayBeforeRotation(float delay)
     {
         yield return new WaitForSeconds(delay);

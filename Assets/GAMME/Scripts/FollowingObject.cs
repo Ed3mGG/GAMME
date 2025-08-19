@@ -1,6 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
+//This script enables the GameObject to follow the selected target
 public class FollowingObject : MonoBehaviour
 {
 
@@ -23,15 +24,13 @@ public class FollowingObject : MonoBehaviour
     GameObject m_thisGameObject;
 
     private float instance;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         instance = 0;
-        ; 
     }
 
-    // Update is called once per frame
+    //Checking the position and rotation of the target and sets the GO to follow those informations
     void Update()
     {
         if (instance == 0)

@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+//This script displays the menu after a selected delay
+//Designed for the Tutoriel 2 or 3
 public class EndTutorial : MonoBehaviour
 {
     Coroutine coroutine;

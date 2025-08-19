@@ -1,7 +1,8 @@
 using System;
 using DG.Tweening;
 using UnityEngine;
-
+//This script serves the purpose of changing the colors of the elements in the scenes
+// It gets the parameters of the designated material and changes it to the selected color
 public class AmbianceManager : MonoBehaviour
 {
     [SerializeField]
@@ -36,7 +37,7 @@ public class AmbianceManager : MonoBehaviour
 
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //Checking if an Ambiance reference exists, else it gets it. 
     void Start()
     {
         if (m_AmbianceReference == null)
@@ -46,7 +47,9 @@ public class AmbianceManager : MonoBehaviour
         //GetComponent<MeshRenderer>().material.DOColor(m_colorSelected, -1);
         AmbianceColorAtStart();
     }
-
+    
+    //This method enables the item to set editor color as its default color
+    //Then it calls the other methods while checking if the user wants to have a colored background
     public void AmbiancePicker()
     {
         m_colorSelected = GetComponent<MeshRenderer>().material.color;
@@ -61,6 +64,7 @@ public class AmbianceManager : MonoBehaviour
         }
     }
 
+    //This method sets the colors to white anytime an "Ambianceur" item is spawned.
     public void AmbianceColorAtStart()
     {
         if (m_FontaineMaterialsReference != null)
@@ -82,6 +86,7 @@ public class AmbianceManager : MonoBehaviour
         }
     }
 
+    //This method sets the Fontaine materials to the selected color
     public void ObjectsAmbianceColor()
     {
         if (m_FontaineMaterialsReference != null)
@@ -99,6 +104,7 @@ public class AmbianceManager : MonoBehaviour
         }
     }
 
+    //This method sets the Environment materials to the selected color
     public void EnvironmentAmbianceColor()
     {
         if (m_EnvironmentMaterialReference != null)
@@ -111,6 +117,7 @@ public class AmbianceManager : MonoBehaviour
         }
     }
 
+    //This method sets the Background material to the selected color
     public void BackgroundAmbiance()
     {
         if (m_AmbianceReference != null)
@@ -119,11 +126,12 @@ public class AmbianceManager : MonoBehaviour
         }
     }
 
+    //This method plays a sound everytime the color changes
     public void PlaySFXFeedback()
     {
         if (m_SFXFeedback)
         {
-            if (m_SFXFeedback != null && m_SFXFeedbackSource != null)
+            if (/*m_SFXFeedback != null &&*/ m_SFXFeedbackSource != null)
             {
                 m_SFXFeedbackSource.PlayOneShot(m_SFXFeedbackClip);
             } 

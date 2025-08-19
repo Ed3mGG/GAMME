@@ -1,6 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 
+//This script is not used...
 public class DOTweenObjectManager : MonoBehaviour
 {
     [SerializeField]

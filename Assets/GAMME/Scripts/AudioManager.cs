@@ -8,13 +8,19 @@ using Button = UnityEngine.UI.Button;
 using Slider = UnityEngine.UI.Slider;
 using Toggle = UnityEngine.UI.Toggle;
 
+//This script is the Audio manager
+//It is where you're managing the sounds that are played in the Enceinte
+//It also manages the Audio menu
 
+//This structure holds the informations of all musics you have
 [Serializable]
 public struct MusicData
 {
     public string musicName;
     public AudioClip audioClip;
 }
+
+
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
@@ -57,6 +63,7 @@ public class AudioManager : MonoBehaviour
         set => m_audioMenu = value;
     }
 
+    //Instantiating this component to acces it anywhere and making sure there is only one Audiomanager
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -66,6 +73,8 @@ public class AudioManager : MonoBehaviour
         }
         Instance = this;
     }
+    
+    //Setting the volume to max and calling the other methods for the audio menu
     void Start()
     {
         SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume", 100));
@@ -74,6 +83,8 @@ public class AudioManager : MonoBehaviour
         ChangeButtonColor();
     }
 
+    //This method gets the audiosource of the enceinte in the scene and sets the clip of the selected music
+    //It also activates or deactivates the menu depending on whether the user selects or deselects the enceinte
     public void MenuVisibility()
     {
         if (m_AudioSource == null)
@@ -87,6 +98,7 @@ public class AudioManager : MonoBehaviour
         else audioMenu.SetActive(false);      
     }
 
+    //Playing or pausing the menu
     public void PlayorPauseMusic()
     {
         if (m_AudioSource.isPlaying)
@@ -101,6 +113,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    //This method changes the color and text of the "PlayPauseButton"
     private void ChangeButtonColor()
     {
         if (!m_AudioSource.isPlaying)
@@ -123,6 +136,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    //If the next button is pressed, the +1 music is selected if it exists and played
+    //Or it goes to the 1st music of the repertory and plays it
     public void NextMusic()
     {
         m_AudioSource.Stop();
@@ -143,6 +158,8 @@ public class AudioManager : MonoBehaviour
         ChangeButtonColor();
     }
 
+    ////If the next button is pressed, the -1 music is selected if it exists and played
+    //Or it goes to the last music of the repertory and plays it
     public void PreviousMusic()
     {
         m_AudioSource.Stop();
@@ -164,6 +181,7 @@ public class AudioManager : MonoBehaviour
         ChangeButtonColor();
     }
 
+    //This method simply displays the name of the currently selected music
     public void TitleMusic()
     {
 
@@ -171,6 +189,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    //This method gets the value of the slider, sends it to the audiomixer and saves the value to the PlayerPrefs
     public void SetVolume(float m_volume)
     {
         if (m_volume < 1)
@@ -183,6 +202,7 @@ public class AudioManager : MonoBehaviour
         m_Mixer.SetFloat("MasterVolume", Mathf.Log10(m_volume / 100) * 20f);
     }
 
+    //This method 
     public void SetVolumeFromSlider()
     {
         SetVolume(m_SliderVolume.value);
@@ -193,6 +213,8 @@ public class AudioManager : MonoBehaviour
         m_SliderVolume.value = m_volume;
     }
 
+    //This method enables the 3D audio
+    //which lets the user manipulates the spatialization of the music through the Enceinte
     public void Audio3D()
     {
         if (m_AudioSource.spatialBlend == 1)
@@ -211,6 +233,9 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    //This method enables the 3D audio
+    //which lets the user manipulates the spatialization of the music through the Enceinte
+    //Sets the toggle to true
     private void SetAudio3D()
     {
         m_Audio3DToggle.isOn = true;

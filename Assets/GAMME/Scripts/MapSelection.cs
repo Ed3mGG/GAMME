@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//This script loads the selected maps
 public class MapSelection : MonoBehaviour
 {
     [SerializeField]

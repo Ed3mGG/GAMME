@@ -2,6 +2,8 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script works along the ColorManager script and enables the Pot de peinture to work
+//This changes to color of the Peinture to the selected color in the Color menu
 public class ColorPicker : MonoBehaviour
 {
     [Header("Color")]
@@ -17,7 +19,7 @@ public class ColorPicker : MonoBehaviour
     private Material _potDePeinture;
 
     Image _button;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         _button = GetComponent<Image>();

@@ -7,6 +7,10 @@ using UnityEngine.UI;
 using UnityEngine.XR.Templates.MR;
 using LazyFollow = UnityEngine.XR.Interaction.Toolkit.UI.LazyFollow;
 
+//This script is used for the tutorial
+//It consists of setting goals for the player to complete
+//Each time the required action has been achieved by the user, a goal is completed
+//When all the goals are completed, it enables the button to go to the next Tutorial
 public struct GoalTutorials
 {
     public StepManagerUI.OnboardingGoals CurrentGoal;
@@ -95,7 +99,6 @@ public struct GoalTutorials
             m_secondGoalInt = 0;
             m_secondGoalIntBis = 0;
             m_thirdGoalInt = 0;
-            //m_endGoalInt = 0;
 
             m_OnboardingGoals.Enqueue(firstGoal);
             m_OnboardingGoals.Enqueue(secondGoal);
@@ -103,13 +106,6 @@ public struct GoalTutorials
             m_OnboardingGoals.Enqueue(endGoal);
 
             m_CurrentGoal = m_OnboardingGoals.Dequeue();
-
-
-            /*if (m_FadeMaterial != null)
-            {
-                m_FadeMaterial.FadeSkybox(false);
-                m_FadeMaterial.FadeAmbiance(false);
-            }*/
         }
 
         public void FirstGoal()

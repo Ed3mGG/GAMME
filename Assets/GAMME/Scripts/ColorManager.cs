@@ -2,6 +2,9 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
+//This script manages the color of the Pot de peinture
+//It displays the menu whenever a Pot de peinture is spawned
+//It changes the color of the object touching the Peinture to the selected color 
 public class ColorManager : MonoBehaviour
 {
     

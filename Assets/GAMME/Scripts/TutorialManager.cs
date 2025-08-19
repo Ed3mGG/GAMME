@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using UnityEngine.XR.Templates.MR;
 
+//This script manages the Tutorial 2
+//Checks how many objects the user spawned
+//When it reaches the needed amount, displays the button to continue to the Tutorial 3
+
 namespace GAMME.Scripts
 {
     public class TutorialManager : MonoBehaviour
